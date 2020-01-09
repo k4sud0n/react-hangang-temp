@@ -1,27 +1,47 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import backgroundImage from '../../img/background.jpg';
-
-const Container = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-      to right,
-      rgba(20, 20, 20, 0.1) 10%,
-      rgba(20, 20, 20, 0.7) 70%,
-      rgba(20, 20, 20, 1)
-    ),
-    url(${backgroundImage});
-  background-size: cover;
-`;
+import React, { Component } from 'react'
+import * as api from '../../lib/api';
 
 class Temperature extends Component {
+
+    state = {
+        loading: false,
+        temperature: null,
+        time: null
+    }
+
+    getAPI = async () => {
+
+        if (this.state.loading) return;
+
+        this.setState({
+            loading: true
+        });
+
+        const response = await api.getAPI();
+
+        const temperature = response.data.temp
+        const time = response.data.time
+
+        this.setState({
+            temperature,
+            time
+          })
+      
+        this.setState({
+            loading: false
+        });
+    }
+
+    componentDidMount() {
+        this.getAPI()
+    }
+
     render() {
+
+        const { temperature, time } = this.state;
+
         return (
-            <Container />
+            <div>{temperature} / {time}</div>
         )
     }
 }
