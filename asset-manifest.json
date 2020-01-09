@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-hangang-temp/static/css/main.6c3c9d0a.chunk.css",
+    "main.js": "/react-hangang-temp/static/js/main.5c247913.chunk.js",
+    "main.js.map": "/react-hangang-temp/static/js/main.5c247913.chunk.js.map",
+    "runtime-main.js": "/react-hangang-temp/static/js/runtime-main.929bbb9c.js",
+    "runtime-main.js.map": "/react-hangang-temp/static/js/runtime-main.929bbb9c.js.map",
+    "static/js/2.89368e58.chunk.js": "/react-hangang-temp/static/js/2.89368e58.chunk.js",
+    "static/js/2.89368e58.chunk.js.map": "/react-hangang-temp/static/js/2.89368e58.chunk.js.map",
+    "index.html": "/react-hangang-temp/index.html",
+    "precache-manifest.d9a93130f855ec2be9b5bfbbb2dd468e.js": "/react-hangang-temp/precache-manifest.d9a93130f855ec2be9b5bfbbb2dd468e.js",
+    "service-worker.js": "/react-hangang-temp/service-worker.js",
+    "static/css/main.6c3c9d0a.chunk.css.map": "/react-hangang-temp/static/css/main.6c3c9d0a.chunk.css.map",
+    "static/js/2.89368e58.chunk.js.LICENSE": "/react-hangang-temp/static/js/2.89368e58.chunk.js.LICENSE",
+    "static/media/background.jpg": "/react-hangang-temp/static/media/background.d48cea5a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.929bbb9c.js",
+    "static/js/2.89368e58.chunk.js",
+    "static/css/main.6c3c9d0a.chunk.css",
+    "static/js/main.5c247913.chunk.js"
+  ]
+}
