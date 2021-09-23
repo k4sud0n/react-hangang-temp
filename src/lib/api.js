@@ -1,6 +1,6 @@
 import axios from 'axios';
 
 export function getAPI() {
-    return axios.get('https://hangang-river-temperature-api.now.sh/');
+    return axios.get('https://hangang-river-temperature-api.vercel.app/');
 }
   
